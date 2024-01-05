@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Landing Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-second-bg-color text-white">
+
+    <!-- navbar -->
+    <div class="bg-black fixed top-0 left-0 ring-0 w-full">
+        <nav class="container mx-auto relative flex items-center justify-between py-4 px-3 md:px-0">
+            <!-- logo -->
+            <div class="text-white text-xl font-bold">
+                Jason <span class="text-main-color">Rivers</span>
+            </div>
+            <!-- navLinks -->
+            <div class="hidden md:block">
+                <ul class="flex items-center space-x-8 ">
+                    <li class="text-main-color hover:text-main-color"><a href="#heroSection">Home</a></li>
+                    <li class="text-white hover:text-main-color"><a href="#aboutSection">About</a></li>
+                    <li class="text-white hover:text-main-color"><a href="#serviceSection">Services</a></li>
+                    <li class="text-white hover:text-main-color"><a href="#portfolioSection">Projects</a></li>
+                    <li class="text-white hover:text-main-color"><a href="#skillSection">Skills</a></li>
+                    <li class="text-white hover:text-main-color"><a href="#contactSection">Contact</a></li>
+                </ul>
+            </div>
+            <!-- menu-icon -->
+            <div class="block md:hidden">
+                <i id="menuicon" class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+            </div>
+
+            <!-- mobile navbar -->
+
+            <ul id="mobile-links"
+                class="container mx-auto space-y-8 overflow-hidden text-center absolute top-[60px] left-0  w-full md:hidden bg-main-color">
+                <li class="pt-4 text-white"><a href="#heroSection">Home</a></li>
+                <li class="text-white "><a href="#aboutSection">About</a></li>
+                <li class="text-white "><a href="#serviceSection">Services</a></li>
+                <li class="text-white "><a href="#portfolioSection">Projects</a></li>
+                <li class="text-white "><a href="#skillSection">Skills</a></li>
+                <li class="pb-4 text-white "><a href="#contactSection">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+    <!-- hero-section -->
+
+    <section id="heroSection"
+        class="container flex-col-reverse mx-auto px-3 py-28 flex items-center justify-between h-auto md:h-screen md:px-0 md:flex-row">
+        <!-- left section -->
+        <div class="w-full md:w-1/2 space-y-3">
+            <h4 class="text-xl">Hi</h4>
+            <h1 class="text-5xl font-bold">Its <span class="text-main-color">Jason</span></h1>
+            <h2 class="text-3xl font-bold md:text-4xl">I'm a <span class="text-main-color" id="element"></span></h2>
+            <p class="text-sm text-balance">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, neque
+                officia, nam
+                repellat adipisci debitis eaque a nihil architecto ratione optio maiores quis mollitia. Velit esse
+                quaerat modi beatae animi.</p>
+            <!-- icons container -->
+            <div class="space-x-3 py-2">
+                <i
+                    class="fab fa-linkedin text-main-color p-2 border-main-color border-solid border-2 rounded-full cursor-pointer hover:text-white"></i>
+                <i
+                    class="fab fa-instagram text-main-color p-2 border-main-color border-solid border-2 rounded-full cursor-pointer hover:text-white "></i>
+                <i
+                    class="fab fa-facebook text-main-color p-2 border-main-color border-solid border-2 rounded-full cursor-pointer hover:text-white "></i>
+                <i
+                    class="fab fa-twitter text-main-color p-2 border-main-color border-solid border-2 rounded-full cursor-pointer hover:text-white "></i>
+            </div>
+            <!-- button -->
+            <a class="bg-main-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                href="#">Download CV</a>
+        </div>
+
+        <!-- right section -->
+
+        <div class="w-5/6 md:w-1/2 flex items-center justify-center pb-8 md:pb-0">
+            <img class="object-cover rounded-full w-80 h-80 md:w-96 md:h-96"
+                src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+
+    </section>
+
+    <!-- about section -->
+
+    <section id="aboutSection"
+        class="container mx-auto flex-col px-3 py-12 h-auto flex items-center justify-center md:justify-between md:flex-row md:h-screen md:px-0">
+        <!-- left-section -->
+        <div class="w-5/6 pt-16 md:pt-0 md:w-1/2  flex items-center justify-center">
+            <img class="object-cover rounded-full w-80 h-80 md:w-96 md:h-96"
+                src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg?size=626&ext=jpg"
+                alt="">
+        </div>
+
+        <!-- right section -->
+
+        <div class="w-full md:w-1/2 space-y-3 text-center pt-10 md:pt-0 md:text-left">
+            <h1 class="font-bold text-5xl">About <span class="text-main-color">Me</span></h1>
+            <h3 class="text-main-color font-semibold text-2xl">Youtuber</h3>
+            <p class="text-sm text-balance">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quasi.
+                Explicabo tempora accusantium incidunt non fugit, deserunt minima? Consectetur aperiam repellat at
+                architecto officia consequuntur ipsam vero reprehenderit sapiente sint!</p>
+            <a class="bg-main-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- service section -->
+
+    <section id="serviceSection" class="container mx-auto px-3 py-16 md:px-0">
+        <h1 class="text-center text-4xl md:text-6xl font-bold">Services</h1>
+        <!-- card container -->
+        <div class="py-12 flex items-center justify-between gap-6 flex-wrap">
+            <!-- card 1 -->
+            <div
+                class="w-5/6 md:w-[300px] mx-auto bg-white rounded-xl py-6 px-1 text-center space-y-4 hover:bg-main-color mt-6">
+                <i class="fa-solid fa-code text-5xl text-bg-color"></i>
+                <h2 class="text-black text-xl font-bold">Web Development</h2>
+                <p class="text-sm text-balance text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat asperiores earum sed rerum. Ea, vero.</p>
+                <a class="bg-bg-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                    href="#">Read More</a>
+            </div>
+            <!-- card 2 -->
+            <div
+                class="w-5/6 md:w-[300px] mx-auto  bg-white rounded-xl py-6 px-1 text-center space-y-4 hover:bg-main-color mt-6">
+                <i class="fa-solid fa-pen text-5xl text-bg-color"></i>
+                <h2 class="text-black text-xl font-bold">Web Design</h2>
+                <p class="text-sm text-balance text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat asperiores earum sed rerum. Ea, vero.</p>
+                <a class="bg-bg-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                    href="#">Read More</a>
+            </div>
+            <!-- card 3 -->
+            <div
+                class="w-5/6 md:w-[300px] mx-auto  bg-white rounded-xl py-6 px-1 text-center space-y-4 hover:bg-main-color mt-6">
+                <i class="fa-solid fa-camera text-5xl text-bg-color"></i>
+                <h2 class="text-black text-xl font-bold">Photography</h2>
+                <p class="text-sm text-balance text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat asperiores earum sed rerum. Ea, vero.</p>
+                <a class="bg-bg-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                    href="#">Read More</a>
+            </div>
+            <!-- card 4 -->
+            <div
+                class="w-5/6 md:w-[300px] mx-auto  bg-white rounded-xl py-6 px-1 text-center space-y-4 hover:bg-main-color mt-6">
+                <i class="fa-brands fa-blogger-b text-5xl text-bg-color"></i>
+                <h2 class="text-black text-xl font-bold">Blogging</h2>
+                <p class="text-sm text-balance text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat asperiores earum sed rerum. Ea, vero.</p>
+                <a class="bg-bg-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                    href="#">Read More</a>
+            </div>
+            <!-- card 5 -->
+            <div
+                class="w-5/6 md:w-[300px] mx-auto  bg-white rounded-xl py-6 px-1 text-center space-y-4 hover:bg-main-color mt-6">
+                <i class="fa-brands fa-youtube text-5xl text-bg-color"></i>
+                <h2 class="text-black text-xl font-bold">Content Creation</h2>
+                <p class="text-sm text-balance text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat asperiores earum sed rerum. Ea, vero.</p>
+                <a class="bg-bg-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                    href="#">Read More</a>
+            </div>
+            <!-- card 6 -->
+            <div
+                class="w-5/6 md:w-[300px] mx-auto  bg-white rounded-xl py-6 px-1 text-center space-y-4 hover:bg-main-color mt-6">
+                <i class="fa-solid fa-palette text-5xl text-bg-color"></i>
+                <h2 class="text-black text-xl font-bold">Graphic Design</h2>
+                <p class="text-sm text-balance text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat asperiores earum sed rerum. Ea, vero.</p>
+                <a class="bg-bg-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+                    href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+
+    <section id="portfolioSection" class="container mx-auto px-3 py-16 md:px-0">
+        <h1 class="text-center text-4xl md:text-6xl font-bold">Portfolio</h1>
+        <!-- Projects-container -->
+        <div class="py-12 flex items-center justify-center gap-12 flex-wrap">
+            <!-- project 1 -->
+            <div id="project1"
+                class="w-5/6 md:w-[290px] h-[200px] rounded-xl text-center flex items-center justify-center flex-col space-y-2">
+                <h2 class="text-xl font-semibold">Web Design</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione.</p>
+                <i
+                    class="fa-solid fa-link bg-main-color text-white hover:text-main-color hover:bg-white font-bold rounded-full p-3"></i>
+            </div>
+            <!-- project 2 -->
+            <div id="project2"
+                class="w-5/6 md:w-[290px] h-[200px] rounded-xl text-center flex items-center justify-center flex-col space-y-2">
+                <h2 class="text-xl font-semibold">Photography</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione.</p>
+                <i
+                    class="fa-solid fa-link bg-main-color text-white hover:text-main-color hover:bg-white font-bold rounded-full p-3"></i>
+            </div>
+            <!-- project 3 -->
+            <div id="project3"
+                class="w-5/6 md:w-[290px] h-[200px] rounded-xl text-center flex items-center justify-center flex-col space-y-2">
+                <h2 class="text-xl font-semibold">Graphic Design</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione.</p>
+                <i
+                    class="fa-solid fa-link bg-main-color text-white hover:text-main-color hover:bg-white font-bold rounded-full p-3"></i>
+            </div>
+            <!-- project 4 -->
+            <div id="project4"
+                class="w-5/6 md:w-[290px] h-[200px] rounded-xl text-center flex items-center justify-center flex-col space-y-2">
+                <h2 class="text-xl font-semibold">Frontend Development</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione.</p>
+                <i
+                    class="fa-solid fa-link bg-main-color text-white hover:text-main-color hover:bg-white font-bold rounded-full p-3"></i>
+            </div>
+            <!-- project 5 -->
+            <div id="project5"
+                class="w-5/6 md:w-[290px] h-[200px] rounded-xl text-center flex items-center justify-center flex-col space-y-2">
+                <h2 class="text-xl font-semibold">Content Creation</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione.</p>
+                <i
+                    class="fa-solid fa-link bg-main-color text-white hover:text-main-color hover:bg-white font-bold rounded-full p-3"></i>
+            </div>
+            <!-- project 6 -->
+            <div id="project6"
+                class="w-5/6 md:w-[290px] h-[200px] rounded-xl text-center flex items-center justify-center flex-col space-y-2">
+                <h2 class="text-xl font-semibold">Marketing</h2>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ratione.</p>
+                <i
+                    class="fa-solid fa-link bg-main-color text-white hover:text-main-color hover:bg-white font-bold rounded-full p-3"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill section -->
+
+    <section id="skillSection" class="container mx-auto px-3 md:px-0 py-16">
+        <h1 class="text-center text-4xl md:text-6xl font-bold">Skills</h1>
+        <!-- progress bar container -->
+        <div class="py-8 space-y-10 w-11/12 mx-auto">
+            <!-- progress 1 -->
+            <div>
+                <p class="text-sm pb-2">HTML</p>
+                <div class="w-full h-2 bg-slate-600 rounded-xl">
+                    <div class="w-5/6 bg-main-color h-2 rounded-xl"></div>
+                </div>
+            </div>
+            <!-- progress 2 -->
+            <div>
+                <p class="text-sm pb-2">CSS</p>
+                <div class="w-full h-2 bg-slate-600 rounded-xl">
+                    <div class="w-11/12 bg-red-700 h-2 rounded-xl"></div>
+                </div>
+            </div>
+            <!-- progress 3 -->
+            <div>
+                <p class="text-sm pb-2">JAVASCRIPT</p>
+                <div class="w-full h-2 bg-slate-600 rounded-xl">
+                    <div class="w-full bg-yellow-400 h-2 rounded-xl"></div>
+                </div>
+            </div>
+            <!-- progress 4 -->
+            <div>
+                <p class="text-sm pb-2">REACT</p>
+                <div class="w-full h-2 bg-slate-600 rounded-xl">
+                    <div class="w-[70%] bg-indigo-900 h-2 rounded-xl"></div>
+                </div>
+            </div>
+            <!-- progress 5 -->
+            <div>
+                <p class="text-sm pb-2">TAILWIND</p>
+                <div class="w-full h-2 bg-slate-600 rounded-xl">
+                    <div class="w-[56%] bg-green-400 h-2 rounded-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me -->
+
+    <section id="contactSection" class="container mx-auto py-16">
+        <h1 class="text-center text-4xl md:text-6xl font-bold">Contact <span class="text-main-color">Me</span></h1>
+        <form class="w-5/6 sm:w-full md:w-3/5 mx-auto pt-14 space-y-4">
+            <input class="bg-black w-full py-2 px-4 rounded-xl text-sm" type="text" placeholder="Full Name">
+            <input class="bg-black w-full py-2 px-4 rounded-xl text-sm" type="email" placeholder="Email">
+            <input class="bg-black w-full py-2 px-4 rounded-xl text-sm" type="text" placeholder="Number">
+            <input class="bg-black w-full py-2 px-4 rounded-xl text-sm" type="text" placeholder="Subject">
+            <textarea class="bg-black w-full py-2 px-4 rounded-xl text-sm" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="flex items-center justify-center py-4">
+                <a class="bg-main-color py-2 px-6 inline-block rounded-full font-semibold hover:border-bg-color hover:bg-white hover:text-black"
+            href="#">Send Message</a>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="w-full bg-main-color flex items-center flex-col p-8">
+        <!-- icon container -->
+        <div class="space-x-3 py-2">
+            <i
+                class="fab fa-linkedin text-white p-2 border-white border-solid border-2 rounded-full cursor-pointer"></i>
+            <i
+                class="fab fa-instagram text-white p-2 border-white border-solid border-2 rounded-full cursor-pointer "></i>
+            <i
+                class="fab fa-facebook text-white p-2 border-white border-solid border-2 rounded-full cursor-pointer "></i>
+            <i
+                class="fab fa-twitter text-white p-2 border-white border-solid border-2 rounded-full cursor-pointer "></i>
+        </div>
+        <!-- footer links -->
+        <ul class="flex gap-5 text-balance pt-3">
+            <li class="text-sm cursor-pointer hover:text-black">FAQ</li>
+            <li class="text-sm cursor-pointer hover:text-black">Services</li>
+            <li class="text-sm cursor-pointer hover:text-black">About Me</li>
+            <li class="text-sm cursor-pointer hover:text-black">Contact Us</li>
+            <li class="text-sm cursor-pointer hover:text-black">Privacy Policy</li>
+        </ul>
+        <!-- copyright msg -->
+        <div class="text-center pt-5 text-sm">
+            <i class="fa-regular fa-copyright"></i> Jason Rivers | All Rights Reserved 
+        </div>
+    </footer>
+
+
+
+    <!-- Javascript Links -->
+    <!-- typing js cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
